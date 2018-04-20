@@ -1,0 +1,8 @@
+/**
+This python scripts accepts two string input
+searches through the first parameter to search for the occurence of the string passed 
+as the second parameter and then further locates the position of the second occurence of that string
+*/
+def find_next_string(first_string, second_string):
+  first_occur = first_string.find(second_string)
+  return first_string.find(second_string,first_occur + 1)
